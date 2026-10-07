@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бемби — страница 3</title>
+  <link rel="icon" type="image/png" href="./assets/img/icon.png">
+
+  <!-- Подключить N.css и pageN.js под номером страницы -->
+  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="./assets/3.css">
+  <link rel="stylesheet" href="./assets/ui.css">
+
+  <script>
+    window.addEventListener('load', function () {
+      var loader = document.getElementById('loader');
+      if (loader) loader.remove();
+    });
+  </script>
+
+  <script src="./postMessageHandler.js"></script>
+  <script src="./assets/ui.js"></script>
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <main>
+
+    <section id="content">
+      <div id="textbox">
+        <p>Только зная тайный путь, пролегающий сквозь густой кустарник, можно было отыскать маленький низенький шалаш, в котором жили Бемби и его мать. Добравшись до дома, усталая мать прилегла отдохнуть, а Бемби не мог усидеть на месте и предложил снова вернуться на поляну.</p>
+        <p>– Днём?! На поляну?! Но это невозможно! – в голосе матери слышался страх. – Мы не можем подвергаться такой опасности. Мы должны прятаться днём. Рано утром и поздно вечером идти можно. Ты поймёшь, когда вырастешь. Сейчас не время объяснять.</p>
+        <p>– Почему? – не успокаивался Бемби. – Почему здесь нет опасности?</p>
+        <p>– Здесь нас охраняют верные друзья: кусты, зоркие ласточки и прошлогодняя листва, которая шуршит и предупреждает о врагах.</p>
+        <p>Бемби задумался и уснул. Поздним вечером мать снова привела его на поляну. Всё казалось знакомым, но на опушке леса появились новые существа, похожие на него.</p>
+        <p>– Это твоя тётя, моя двоюродная сестра Энна, у неё двойня, – сказала мать. – Пойдём, это хорошая компания для тебя.</p>
+        <p>Тётя представила детей:</p>
+        <p>– Это Гобо и Фалина. Поиграйте.</p>
+        <p>Три малыша втянуто стояли, не шевелясь, долго смотрели друг на друга, пока Фалина не потеряла терпение. Она внезапно подпрыгнула и побежала прочь. Бемби и Гобо бросились за ней. Они бегали, прыгали, играли в догонялки, дух захватывало от радости и скорости.</p>
+        <p>Устав, дети сели и заговорили. Бемби рассказал про кузнечика и мотылька. Фалина спросила:</p>
+        <p>– Ты знаком с майским жуком?</p>
+        <p>– Нет.</p>
+        <p>– Я часто с ним разговариваю, – гордо сказала она.</p>
+        <p>– А меня уколол ёжик, – сказал Гобо. – Но не со зла, я сам приставал.</p>
+        <p>– Значит, он злой! – настаивала Фалина.</p>
+        <p>– Нет, мне было совсем не больно.</p>
+        <p>Бемби спросил:</p>
+        <p>– Почему ёжик не хочет говорить?</p>
+        <p>– Он сворачивается клубком из иголок, чтобы спрятаться от опасности.</p>
+        <p>– А что такое опасность? – спросил Бемби.</p>
+        <p>Все стали серьёзными. Гобо попытался объяснить, но не смог.</p>
+        <p>– Опасность – это когда надо бежать со всех ног! – вскрикнула Фалина и вновь сорвалась с места. Напряжённость, повисшая в воздухе от страха перед неизвестным, как ни бывало исчезла. За ней прыгнули Гобо и Бемби, и все трое весело побежали, забыв обо всём, что недавно их тревожило.</p>
+      </div>
+    </section>
+
+    <div id="scene">
+      <div id="overflow-wrapper">
+        <!-- фоны суток: day — основа, остальные — оверлеи поверх неё -->
+        <img class="scene__img" id="day"       src="./assets/img/page-3/day.png"       alt="День">
+        <img class="scene__img" id="morning"   src="./assets/img/page-3/morning.png"   alt="Утро">
+        <img class="scene__img" id="afternoon" src="./assets/img/page-3/afternoon.png" alt="Вечер">
+        <img class="scene__img" id="night"     src="./assets/img/page-3/night.png"     alt="Ночь">
+
+        <img class="scene__img" id="sun"    src="./assets/img/page-3/sun.png"    alt="Солнце">
+        <img class="scene__img" id="forest" src="./assets/img/page-3/forest.png" alt="Лес">
+        <img class="scene__img" id="fogs"   src="./assets/img/page-3/fogs.png"   alt="Туман">
+
+        <!-- олень: задние/передние дальние ноги — под телом, ближние — над ним -->
+        <img class="scene__img" id="leg_zd" src="./assets/img/page-3/leg_zd.png" alt="">
+        <img class="scene__img" id="leg_pd" src="./assets/img/page-3/leg_pd.png" alt="">
+        <img class="scene__img" id="deer"   src="./assets/img/page-3/deer.png"   alt="Олень">
+        <img class="scene__img" id="leg_zb" src="./assets/img/page-3/leg_zb.png" alt="">
+        <img class="scene__img" id="leg_pb" src="./assets/img/page-3/leg_pb.png" alt="">
+
+        <img class="scene__img" id="tree"    src="./assets/img/page-3/tree.png"    alt="Дерево">
+        <img class="scene__img" id="poacher" src="./assets/img/page-3/poacher.png" alt="Браконьер">
+
+        <!-- бабочки: тело + левое и правое крыло -->
+        <img class="scene__img" id="left_wing"   src="./assets/img/page-3/left_wing.png"   alt="">
+        <img class="scene__img" id="right_wing"  src="./assets/img/page-3/right_wing.png"  alt="">
+        <img class="scene__img" id="butterfly"   src="./assets/img/page-3/butterfly.png"   alt="Бабочка">
+
+        <img class="scene__img" id="left_wing1"  src="./assets/img/page-3/left_wing1.png"  alt="">
+        <img class="scene__img" id="right_wing1" src="./assets/img/page-3/right_wing1.png" alt="">
+        <img class="scene__img" id="butterfly1"  src="./assets/img/page-3/butterfly1.png"  alt="Бабочка">
+
+        <img class="scene__img" id="left_wing2"  src="./assets/img/page-3/left_wing2.png"  alt="">
+        <img class="scene__img" id="right_wing2" src="./assets/img/page-3/right_wing2.png" alt="">
+        <img class="scene__img" id="butterfly2"  src="./assets/img/page-3/butterfly2.png"  alt="Бабочка">
+
+        <img class="scene__img" id="left_wing3"  src="./assets/img/page-3/left_wing3.png"  alt="">
+        <img class="scene__img" id="right_wing3" src="./assets/img/page-3/right_wing3.png" alt="">
+        <img class="scene__img" id="butterfly3"  src="./assets/img/page-3/butterfly3.png"  alt="Бабочка">
+
+        <img class="scene__img" id="left_wing4"  src="./assets/img/page-3/left_wing4.png"  alt="">
+        <img class="scene__img" id="right_wing4" src="./assets/img/page-3/right_wing4.png" alt="">
+        <img class="scene__img" id="butterfly4"  src="./assets/img/page-3/butterfly4.png"  alt="Бабочка">
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./assets/page3.js"></script>
+</body>
+
+</html>

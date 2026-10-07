@@ -1,0 +1,87 @@
+{
+  "hideNavigation": false,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Глава 1",
+      "image": "/assets/img/table-of-content/page-index.png",
+      "pages": [
+        {
+          "number": 1,
+          "title": "Первая страница",
+          "image": "/assets/img/table-of-content/page-1.png"
+        },
+        {
+          "number": 2,
+          "title": "Вторая страница",
+          "image": "/assets/img/table-of-content/page-2.png"
+        },
+        {
+          "number": 3,
+          "title": "Третья страница",
+          "image": "/assets/img/table-of-content/page-3.png"
+        },
+        {
+          "number": 4,
+          "title": "Четвёртая страница",
+          "image": "/assets/img/table-of-content/page-4.png"
+        },
+        {
+          "number": 5,
+          "title": "Пятая страница",
+          "image": "/assets/img/table-of-content/page-5.png"
+        },
+        {
+          "number": 6,
+          "title": "Шестая страница",
+          "image": "/assets/img/table-of-content/page-6.png"
+        },
+        {
+          "number": 7,
+          "title": "Первая дверь",
+          "image": "/assets/img/table-of-content/page-6_1.png"
+        },
+        {
+          "number": 8,
+          "title": "Вторая дверь",
+          "image": "/assets/img/table-of-content/page-6_2.png"
+        },
+        {
+          "number": 9,
+          "title": "Третья дверь",
+          "image": "/assets/img/table-of-content/page-6_3.png"
+        },
+        {
+          "number": 10,
+          "title": "Седьмая страница",
+          "image": "/assets/img/table-of-content/page-7.png"
+        },
+        {
+          "number": 11,
+          "title": "Восьмая страница",
+          "image": "/assets/img/table-of-content/page-8.png"
+        },
+        {
+          "number": 12,
+          "title": "Девятая страница",
+          "image": "/assets/img/table-of-content/page-9.png"
+        },
+        {
+          "number": 13,
+          "title": "Десятая страница",
+          "image": "/assets/img/table-of-content/page-10.png"
+        },
+        {
+          "number": 14,
+          "title": "Одиннадцатая страница",
+          "image": "/assets/img/table-of-content/page-11.png"
+        },
+        {
+          "number": 15,
+          "title": "Двенадцатая страница",
+          "image": "/assets/img/table-of-content/page-12.png"
+        }
+      ]
+    }
+  ]
+}

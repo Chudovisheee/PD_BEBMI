@@ -1,0 +1,69 @@
+#background     {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#head      {
+  left: 18.5%;
+  top: 25%;
+  width: 34.32%;
+  z-index: 3;
+}
+
+#left_ear  {
+  left: 12%;
+  bottom: 62%;
+  width: 17.55%;
+  z-index: 4;
+}
+
+#right_ear{
+  left: 43%;
+  bottom: 57.7%;
+  width: 24.95%;
+  z-index: 4;
+}
+
+#left_eye  {
+  left: 22.5%;
+  bottom: 51.3%;
+  width: 6.3%;
+  z-index: 4;
+}
+
+#right_eye    {
+  left: 34.5%;
+  bottom: 47.7%;
+  width: 6.3%;
+  z-index: 4;
+}
+
+#eyelids  {
+  left: 20.1%;
+  bottom: 50.5%;
+  width: 24.7%;
+  z-index: 5;
+}
+
+#grasshopper {
+  right: 20%;
+  bottom: 7%;
+  width: 38.07%;
+  z-index: 6;
+}
+
+#butterfly_wings {
+  right: 55%;
+  bottom: 10%;
+  width: 32.4%;
+  z-index: 7;
+}
+
+#butterfly_body {
+  right: 65%;
+  bottom: 17%;
+  width: 12.5%;
+  z-index: 8;
+}

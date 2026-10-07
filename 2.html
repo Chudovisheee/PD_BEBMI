@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бемби — страница 2</title>
+  <link rel="icon" type="image/png" href="./assets/img/icon.png">
+
+  <!-- Подключить N.css и pageN.js под номером страницы -->
+  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="./assets/2.css">
+  <link rel="stylesheet" href="./assets/ui.css">
+
+  <script>
+    window.addEventListener('load', function () {
+      var loader = document.getElementById('loader');
+      if (loader) loader.remove();
+    });
+  </script>
+
+  <script src="./postMessageHandler.js"></script>
+  <script src="./assets/ui.js"></script>
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <main>
+
+    <!-- ШАГ 1: перенести текст страницы (один <p> = один абзац) -->
+    <section id="content">
+      <div id="textbox">
+        <p>Бемби впервые отправился в путешествие по лесной тропинке. Он шёл вслед за матерью и непрерывно задавал ей вопросы. Эта игра в «вопрос-ответ» была самым любимым занятием Бемби. Ему казалось восхитительным и нетерпение, с которым он ожидал ответа, и то, что узнавать что-то новое он мог ежеминутно – идеи для вопросов сыпались как из рога изобилия. Пусть он понимал не всё, что ему говорила в ответ мама, но это давало отличный повод для новых расспросов. Величие и необъятность того мира, в котором ему предстояло жить, вызывали в нём трепетный и живой интерес, наполненный как ощущениями полного счастья, так и страха.</p>
+        <p>Впереди забрезжил просвет между деревьями. Лесная чаща закончилась. Она уступала место простору. Это чудесное, освещённое солнцем место мать Бемби назвала «поляна».</p>
+        <p>Но теперь, ступая вперёд, олениха настороженно прислушивалась к каждому дуновению ветерка. Она преградила путь своему детёнышу, который легкомысленно пытался прыгнуть на поляну.</p>
+        <p>– Жди. Я сама скажу тебе, когда можно будет идти сюда.</p>
+        <p>Оленёнок послушно стоял на месте. Мать заговорила снова:</p>
+        <p>– Идти на поляну – трудно и опасно. Ты сам потом поймёшь почему. Запомни пока одно. Если увидишь, что я бегу назад, – беги и сам во всю прыть. Это наше спасение – бежать. – Она стала говорить медленнее, словно какие-то картины возникали перед её глазами, слегка затуманенными то ли от ветра, то ли от солнца. – Если… если вдруг… если ты увидишь, что я… что я падаю… всё равно беги прочь с этого места. Пообещай мне!</p>
+        <p>– Хорошо, я сделаю всё, как ты сказала, – согласился Бемби.</p>
+        <p>– А теперь иди ко мне! – позвала его мать.</p>
+        <p>Бемби прыгнул. И вмиг очутился на поляне.</p>
+        <!-- <img id="undertext" src="./assets/img/page-N/....png" alt=""> -->
+      </div>
+    </section>
+
+    <!-- ШАГ 2: сверстать сцену. Позиции — в N.css, логика — в pageN.js -->
+    <div id="scene">
+      <div id="overflow-wrapper">
+        <img class="scene__img" id="background"      src="./assets/img/page-2/background.png"      alt="Поляна">
+        <img class="scene__img" id="right_eye"       src="./assets/img/page-2/right_eye.png"       alt="Глаз">
+        <img class="scene__img" id="left_eye"        src="./assets/img/page-2/left_eye.png"        alt="Глаз">
+        <img class="scene__img" id="right_ear"       src="./assets/img/page-2/right_ear.png"       alt="Ухо">
+        <img class="scene__img" id="left_ear"        src="./assets/img/page-2/left_ear.png"        alt="Ухо">
+        <img class="scene__img" id="grasshopper"     src="./assets/img/page-2/grasshopper.png"     alt="Кузнечик">
+        <img class="scene__img" id="eyelids"         src="./assets/img/page-2/eyelids.png"         alt="Веки">
+        <img class="scene__img" id="head"            src="./assets/img/page-2/head.png"            alt="Голова Бемби">
+        <img class="scene__img" id="butterfly_body"  src="./assets/img/page-2/butterfly_body.png"  alt="Бабочка">
+        <img class="scene__img" id="butterfly_wings" src="./assets/img/page-2/butterfly_wings.png" alt="Бабочка">
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./assets/page2.js"></script>
+</body>
+
+</html>

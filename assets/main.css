@@ -1,0 +1,417 @@
+/* ==========================================================================
+   main.css — общие стили книги
+   Здесь: база, типографика, адаптивность, инфраструктура сцены, лоадер.
+   Стили элементов конкретной сцены — только в N.css.
+   ========================================================================== */
+
+/* ---------- 1. Normalize (сокращённый) ---------- */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+b, strong {
+  font-weight: bolder;
+}
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[hidden] {
+  display: none;
+}
+
+/* ---------- 2. Шрифты ---------- */
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Astra Sans";
+  src: local("PT Astra Sans Regular"), local("PT Astra Sans-Regular"),
+       url("../fonts/pt-astra-sans_regular.woff2") format("woff2"),
+       url("../fonts/pt-astra-sans_regular.woff") format("woff"),
+       url("../fonts/pt-astra-sans_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Astra Sans";
+  src: local("PT Astra Sans Bold"), local("PT Astra Sans-Bold"),
+       url("../fonts/pt-astra-sans_bold.woff2") format("woff2"),
+       url("../fonts/pt-astra-sans_bold.woff") format("woff"),
+       url("../fonts/pt-astra-sans_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Astra Serif";
+  src: local("PT Astra Serif Regular"), local("PT Astra Serif-Regular"),
+       url("../fonts/pt-astra-serif_regular.woff2") format("woff2"),
+       url("../fonts/pt-astra-serif_regular.woff") format("woff"),
+       url("../fonts/pt-astra-serif_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Astra Serif";
+  src: local("PT Astra Serif Italic"), local("PT Astra Serif-Italic"),
+       url("../fonts/pt-astra-serif_italic.woff2") format("woff2"),
+       url("../fonts/pt-astra-serif_italic.woff") format("woff"),
+       url("../fonts/pt-astra-serif_italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("Open Sans-Regular"),
+       url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+       url("../fonts/OpenSans-Regular.woff") format("woff"),
+       url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------- 3. База ---------- */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  -webkit-user-select: none;
+  user-select: none;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
+}
+
+#notify {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  color: var(--bk-text, #000);
+  font-family: "Golos", sans-serif;
+  line-height: 120%;
+  background: rgba(229, 229, 236, 0.5);
+  pointer-events: none;
+}
+
+/* ---------- 4. Лейаут ---------- */
+main {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- 5. Текст страницы ---------- */
+#content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: calc(360px + 1320 * ((100vw - 767px) / (3840 - 767)));
+  min-height: calc(600px + 200 * ((100vw - 767px) / (3840 - 767)));
+  z-index: 4;
+  background: transparent;
+  overflow-y: auto;
+}
+#content::-webkit-scrollbar {
+  width: 8px;
+}
+#content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+#content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+#content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: calc(40px + 56 * ((100vw - 767px) / (1920 - 767)));
+}
+#textbox h1 {
+  margin-bottom: 30px;
+  font-size: calc(40px + 24 * ((100vw - 767px) / (1920 - 767)));
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #000000;
+}
+#textbox .content-item {
+  margin-bottom: 20px;
+  padding: 0;
+  background: transparent;
+}
+#textbox .content-item h3 {
+  margin: 0 0 15px;
+  font-size: calc(20px + 8 * ((100vw - 767px) / (1920 - 767)));
+  font-weight: 700;
+  color: #000000;
+}
+#textbox p {
+  font-size: calc(14px + 8 * ((100vw - 767px) / (1920 - 767)));
+  line-height: 1.6;
+  color: var(--bk-text, #000000);
+
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 3;
+  -webkit-hyphenate-limit-chars: 6 3 3;
+  -webkit-hyphenate-limit-lines: 2;
+  -webkit-hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-zone: 8%;
+  -moz-hyphens: auto;
+  -moz-hyphenate-limit-chars: 6 3 3;
+  -moz-hyphenate-limit-lines: 2;
+  -moz-hyphenate-limit-last: always;
+  -moz-hyphenate-limit-zone: 8%;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: 6 3 3;
+  -ms-hyphenate-limit-lines: 2;
+  -ms-hyphenate-limit-last: always;
+  -ms-hyphenate-limit-zone: 8%;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+  hyphenate-limit-zone: 8%;
+}
+
+#undertext {
+  position: relative;
+  width: 15%;
+  margin-bottom: 64px;
+}
+
+/* ---------- 6. Сцена (инфраструктура; позиции слоёв — в N.css) ---------- */
+#scene {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 2160px;
+  max-height: 2160px;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+#overflow-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.scene__img {
+  position: absolute;
+  display: block;
+  -webkit-user-drag: none;
+}
+
+/* ---------- 7. Лоадер ---------- */
+#loader {
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333333;
+}
+.lds-ring {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  position: absolute;
+  box-sizing: border-box;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #cccccc;
+  border-radius: 50%;
+  border-color: #cccccc transparent transparent transparent;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+.lds-ring div:nth-child(1) { animation-delay: -0.45s; }
+.lds-ring div:nth-child(2) { animation-delay: -0.3s; }
+.lds-ring div:nth-child(3) { animation-delay: -0.15s; }
+@keyframes lds-ring {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ---------- 8. Адаптивность ---------- */
+@media only screen and (min-width: 1601px) {
+  #notify {
+    padding: 32px;
+    border-radius: 32px;
+    font-size: 32px;
+    top: 56px;
+    right: 56px;
+  }
+}
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+  #notify {
+    padding: 8px 23px 8px 16px;
+    margin-right: 39px;
+    border-radius: 0 0 0 16px;
+    font-size: 26px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  #notify {
+    padding: 10px 66px 10px 16px;
+    border-radius: 0 0 16px 16px;
+    font-size: 24px;
+  }
+}
+
+/* Портретная ориентация: сцена сверху, текст под ней, страница скроллится */
+@media screen and (orientation: portrait) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+  #scene {
+    order: -1;
+    width: 100%;
+    height: auto;
+  }
+  #content {
+    width: 100%;
+    min-height: calc(500px + 300 * ((100vw - 480px) / (1080 - 480)));
+    margin-bottom: 80px;
+    overflow-y: visible;
+  }
+  #textbox {
+    padding: calc(40px + 56 * ((100vw - 480px) / (1080 - 480)));
+  }
+  #textbox h1 {
+    font-size: calc(40px + 24 * ((100vw - 480px) / (1080 - 480)));
+  }
+  #textbox .content-item h3 {
+    font-size: calc(20px + 8 * ((100vw - 480px) / (1080 - 480)));
+  }
+  #textbox p {
+    font-size: calc(16px + 6 * ((100vw - 480px) / (1080 - 480)));
+    line-height: 135%;
+  }
+  #textbox .region-name {
+    font-size: calc(18px + 8 * ((100vw - 480px) / (1080 - 480)));
+  }
+  #undertext {
+    position: static;
+    width: 15%;
+  }
+  #notify {
+    padding: 16px;
+    border-radius: 0 0 16px 16px;
+    font-size: 14px;
+    left: 64px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #textbox {
+    padding: calc(20px + 28 * ((100vw - 360px) / (480 - 360)));
+  }
+  #textbox p {
+    font-size: calc(18px + 4 * ((100vw - 360px) / (480 - 360)));
+  }
+
+  #undertext {
+    width: 20%;
+  }
+}

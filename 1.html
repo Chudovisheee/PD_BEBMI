@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бемби — страница 1</title>
+  <link rel="icon" type="image/png" href="./assets/img/icon.png">
+
+  <!-- Подключить N.css и pageN.js под номером страницы -->
+  <link rel="stylesheet" href="./assets/main.css">
+  <link rel="stylesheet" href="./assets/1.css">
+  <link rel="stylesheet" href="./assets/ui.css">
+
+  <script>
+    window.addEventListener('load', function () {
+      var loader = document.getElementById('loader');
+      if (loader) loader.remove();
+    });
+  </script>
+
+  <script src="./postMessageHandler.js"></script>
+  <script src="./assets/ui.js"></script>
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <main>
+
+    <!-- ШАГ 1: перенести текст страницы (один <p> = один абзац) -->
+    <section id="content">
+      <div id="textbox">
+        <p>Местом его рождения стала дремучая чаща, заветный уголок, надёжно укрытый от случайного пришельца в лесное царство. Первой его заметила сорока. Она спешила по неотложным делам, но, увидев новорождённого, сразу обо всём забыла.</p>
+        <p>– Чудесный кроха! – несколько раз повторила она. Не обращая ни малейшего внимания на то, что ей никто не ответил, сорока продолжала: – Это невероятно! Как такая кроха нескольких часов от роду уже может стоять и даже ходить! Я считаю, что это просто изумительно! Впрочем, вы, олени, превосходны во всём!</p>
+        <p>– Извините, – тихо промолвила мать. – Я не могу сейчас с вами разговаривать. У меня совсем не осталось сил…</p>
+        <p>Сорока продолжала оживлённо трещать о том, как беспомощны только что вылупившиеся из яиц птенцы, обо всём, что только знала на эту тему, но её так никто и не слушал… Когда она наконец умолкла – возможно, слегка устала сама от себя, – то решила лететь дальше. Она думала лишь о том, как глупы эти создания, не умеющие поддержать разговор.</p>
+        <p>Олениха не заметила её исчезновения. Она ласково, осторожно вылизывала языком своего маленького сына, его растрёпанную шубку в белых крапинках. Его детское личико было сонным.</p>
+        <p>Малыш пока не познал в своей жизни ничего, кроме материнского тепла, нежности, ласки и заботы. Кроха сумел найти источник материнского молока и приник к нему. Мать новорождённого в это время прислушивалась к окружающему их миру – к его шорохам и звукам. Успокоившись, не услышав ничего подозрительного, она в порыве счастья целовала ребёнка и снова и снова восторженно повторяла шёпотом его имя: «Бемби, мой маленький Бемби!»</p>
+        <!-- <img id="undertext" src="./assets/img/page-N/....png" alt=""> -->
+      </div>
+    </section>
+
+    <!-- ШАГ 2: сверстать сцену. Позиции — в N.css, логика — в pageN.js -->
+    <div id="scene">
+      <div id="overflow-wrapper">
+        <img class="scene__img" id="background"       src="./assets/img/page-1/background.png"       alt="Лес">
+        <img class="scene__img" id="ear_bg"           src="./assets/img/page-1/ear_bg.png"           alt="Ухо">
+        <img class="scene__img" id="falinas_tongue"   src="./assets/img/page-1/falinas_tongue.png"   alt="Язык">
+        <img class="scene__img" id="falina"           src="./assets/img/page-1/falina.png"           alt="Фалина">
+        <img class="scene__img" id="ear_fg"           src="./assets/img/page-1/ear_fg.png"           alt="Ухо">
+        <img class="scene__img" id="bembi"            src="./assets/img/page-1/bembi.png"            alt="Бемби">
+        <img class="scene__img" id="bembis_left_eye"  src="./assets/img/page-1/bembis_left_eye.png"  alt="Глаза">
+        <img class="scene__img" id="bembis_right_eye" src="./assets/img/page-1/bembis_right_eye.png" alt="Глаза">
+        <img class="scene__img" id="eyelids"          src="./assets/img/page-1/eyelids.png"          alt="Веки">
+        <img class="scene__img" id="foreground"       src="./assets/img/page-1/foreground.png"       alt="Лес">
+        <img class="scene__img" id="life1"            src="./assets/img/page-1/life1.png"            alt="Листик">
+        <img class="scene__img" id="life2"            src="./assets/img/page-1/life2.png"            alt="Листик">
+        <img class="scene__img" id="life3"            src="./assets/img/page-1/life3.png"            alt="Листик">
+        <img class="scene__img" id="life4"            src="./assets/img/page-1/life4.png"            alt="Листик">
+        <img class="scene__img" id="life5"            src="./assets/img/page-1/life5.png"            alt="Листик">
+      </div>
+    </div>
+
+  </main>
+
+  <script src="./assets/page1.js"></script>
+</body>
+
+</html>

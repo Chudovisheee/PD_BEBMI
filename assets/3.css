@@ -1,0 +1,220 @@
+/* ==========================================================================
+   3.css — позиции слоёв страницы 3 (в процентах от сцены 1920 × 1920)
+   Позиции подобраны по макету 03-1. z-index снизу вверх:
+   day → morning/afternoon/night (оверлеи, одинаковый z) → sun → forest → fogs →
+   дальние ноги → deer → ближние ноги → tree → poacher → бабочки
+   ========================================================================== */
+
+
+#day {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+#morning {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+}
+
+#afternoon {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+}
+
+#night {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+}
+
+#sun {
+  left: 0.53%;
+  top: 34.69%;
+  width: 12.97%;
+  z-index: 3;
+}
+
+#forest {
+  left: 3.92%;
+  top: 10.12%;
+  width: 92.08%;
+  z-index: 4;
+}
+
+#fogs {
+  left: 0%;
+  top: 15.89%;
+  width: 100%;
+  z-index: 5;
+}
+
+#leg_zd {
+  left: 46.58%;
+  top: 47.74%;
+  width: 5%;
+  z-index: 6;
+}
+
+#leg_pd {
+  left: 32.83%;
+  top: 47.85%;
+  width: 5%;
+  z-index: 6;
+}
+
+#deer {
+  left: 27.13%;
+  top: 34.29%;
+  width: 22.92%;
+  z-index: 7;
+}
+
+#leg_zb {
+  left: 44.11%;
+  top: 47.48%;
+  width: 5%;
+  z-index: 8;
+}
+
+#leg_pb {
+  left: 35.2%;
+  top: 48.18%;
+  width: 3.91%;
+  z-index: 8;
+}
+
+#tree {
+  left: 70.54%;
+  top: 0%;
+  width: 25.26%;
+  z-index: 9;
+}
+
+#poacher {
+  left: 68.69%;
+  top: 38.65%;
+  width: 28.85%;
+  z-index: 10;
+}
+
+/* butterfly */
+#left_wing {
+  left: 18.42%;
+  top: 11%;
+  width: 5%;
+  z-index: 11;
+}
+
+#right_wing {
+  left: 21.74%;
+  top: 10.28%;
+  width: 4.84%;
+  z-index: 11;
+}
+
+#butterfly {
+  left: 20.38%;
+  top: 10.34%;
+  width: 4.38%;
+  z-index: 11;
+}
+
+/* butterfly1 */
+#left_wing1 {
+  left: 34.66%;
+  top: 18.73%;
+  width: 3.7%;
+  z-index: 12;
+}
+
+#right_wing1 {
+  left: 37.24%;
+  top: 16.61%;
+  width: 3.49%;
+  z-index: 12;
+}
+
+#butterfly1 {
+  left: 36.01%;
+  top: 17.23%;
+  width: 3.02%;
+  z-index: 12;
+}
+
+/* butterfly2 */
+#left_wing2 {
+  left: 55.15%;
+  top: 5.97%;
+  width: 4.48%;
+  z-index: 13;
+}
+
+#right_wing2 {
+  left: 57.76%;
+  top: 7.89%;
+  width: 4.48%;
+  z-index: 13;
+}
+
+#butterfly2 {
+  left: 56.79%;
+  top: 6.86%;
+  width: 4.27%;
+  z-index: 13;
+}
+
+/* butterfly3 */
+#left_wing3 {
+  left: 65.81%;
+  top: 23.41%;
+  width: 3.7%;
+  z-index: 14;
+}
+
+#right_wing3 {
+  left: 68.44%;
+  top: 21.31%;
+  width: 3.49%;
+  z-index: 14;
+}
+
+#butterfly3 {
+  left: 67.16%;
+  top: 21.9%;
+  width: 3.02%;
+  z-index: 14;
+}
+
+/* butterfly4 */
+#left_wing4 {
+  left: 3.78%;
+  top: 24.7%;
+  width: 3.96%;
+  z-index: 15;
+}
+
+#right_wing4 {
+  left: 6.07%;
+  top: 27.17%;
+  width: 4.01%;
+  z-index: 15;
+}
+
+#butterfly4 {
+  left: 5.35%;
+  top: 25.95%;
+  width: 3.85%;
+  z-index: 15;
+}
+
+/* до старта скрипта оверлеи суток скрыты */
+#morning, #afternoon, #night {
+  opacity: 0;
+}

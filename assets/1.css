@@ -1,0 +1,108 @@
+#background     {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+#ear_bg      {
+  left: 38%;
+  top: 37%;
+  width: 6%;
+  z-index: 3;
+}
+
+#falinas_tongue  {
+  left: 35%;
+  top: 53%;
+  width: 3.75%;
+  z-index: 3;
+}
+
+#falina    {
+  left: 34.5%;
+  top: 19%;
+  width: 60.1%;
+  z-index: 4;
+}
+
+#ear_fg  {
+  left: 41%;
+  bottom: 55%;
+  width: 6%;
+  z-index: 5;
+}
+
+#bembi {
+  right: 45.5%;
+  bottom:12.2%;
+  width: 32.7%;
+  z-index: 6;
+}
+
+#bembis_left_eye {
+  right: 74.2%;
+  bottom: 27%;
+  width: 1.88%;
+  z-index: 7;
+}
+
+#bembis_right_eye {
+  right: 70.9%;
+  bottom: 28.5%;
+  width: 1.51%;
+  z-index: 7;
+}
+
+#eyelids {
+  right: 70.4%;
+  bottom: 28.5%;
+  width: 6.25%;
+  z-index: 8;
+}
+
+#foreground {
+  right: 1%;
+  bottom: 6.1%;
+  width: 97.7%;
+  z-index: 9;
+}
+
+#life1 {
+  right: 53%;
+  bottom: 83.5%;
+  width: 10.52%;
+  z-index: 10;
+}
+
+#life2 {
+  right: 43.5%;
+  bottom: 92%;
+  width: 6.93%;
+  z-index: 10;
+}
+
+#life3 {
+  right: 67%;
+  bottom: 87.5%;
+  width: 5.26%;
+  z-index: 10;
+}
+
+#life4 {
+  right: 74%;
+  bottom: 71%;
+  width: 3.02%;
+  z-index: 10;
+}
+
+#life5 {
+  right: 68.3%;
+  bottom: 67%;
+  width: 7.76%;
+  z-index: 10;
+}
+
+.visible {
+  opacity: 1;
+}
