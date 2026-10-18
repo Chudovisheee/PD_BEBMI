@@ -237,6 +237,9 @@ main::-webkit-scrollbar {
   color: #000000;
 }
 #textbox p {
+  align-self: stretch;
+  width: 100%;
+  text-align: left;
   font-size: calc(14px + 8 * ((100vw - 767px) / (1920 - 767)));
   line-height: 1.6;
   color: var(--bk-text, #000000);

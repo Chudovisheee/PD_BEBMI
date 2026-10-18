@@ -1,0 +1,125 @@
+#sky {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+#sun {
+  left: 13.44%;
+  top: 3.23%;
+  width: 78.85%;
+  z-index: 2;
+}
+
+#ground {
+  left: 0%;
+  top: 42.5%;
+  width: 100%;
+  z-index: 3;
+}
+
+#trees {
+  left: 1.09%;
+  top: 0%;
+  width: 94.38%;
+  z-index: 4;
+}
+
+#fog {
+  left: -2%;
+  top: 37.2%;
+  width: 105%;
+  z-index: 5;
+}
+
+#shadows {
+  left: 0%;
+  top: 45.62%;
+  width: 100%;
+  z-index: 6;
+}
+
+#stag_shadow {
+  left: 62.14%;
+  top: 84.38%;
+  width: 31.82%;
+  z-index: 7;
+}
+
+#stag_leg_zd {
+  left: 84.6%;
+  top: 73.21%;
+  width: 5.94%;
+  z-index: 8;
+}
+
+#stag_leg_pd {
+  left: 68.49%;
+  top: 73.55%;
+  width: 5.99%;
+  z-index: 8;
+}
+
+#stag {
+  left: 62.16%;
+  top: 56.14%;
+  width: 27.34%;
+  z-index: 9;
+}
+
+#stag_leg_zb {
+  left: 81.77%;
+  top: 72.62%;
+  width: 5.99%;
+  z-index: 10;
+}
+
+#stag_leg_pb {
+  left: 71.37%;
+  top: 73.59%;
+  width: 4.69%;
+  z-index: 10;
+}
+
+#bambi_shadow {
+  left: 23.7%;
+  top: 84.69%;
+  width: 28.07%;
+  z-index: 11;
+}
+
+#bambi_leg_zd {
+  left: 28.68%;
+  top: 75.67%;
+  width: 6.04%;
+  z-index: 12;
+}
+
+#bambi_leg_pd {
+  left: 39.84%;
+  top: 76.85%;
+  width: 2.29%;
+  z-index: 12;
+}
+
+#bambi {
+  left: 29.44%;
+  top: 67.72%;
+  width: 22.19%;
+  z-index: 13;
+}
+
+#bambi_leg_zb {
+  left: 31.68%;
+  top: 75.67%;
+  width: 4.06%;
+  z-index: 14;
+}
+
+#bambi_leg_pb {
+  left: 40.94%;
+  top: 77.15%;
+  width: 3.33%;
+  z-index: 14;
+}
