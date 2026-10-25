@@ -4,29 +4,18 @@ document.addEventListener('DOMContentLoaded', function() {
         totalStandardPages: 12, // кол-во стандартных страниц
         imageExtension: 'png', // формат картинок которые скрипт подсасывает из table-of-content
 
-        hiddenPages: ['6_1.html', '6_2.html', '6_3.html'],
+        hiddenPages: [],
         //тут лежат нестандартные страницы (например, когда у вас несколько версий одной страницы должны переключаться скриптом и быть в разных html)
-        customPages: [
-            { filename: '6_1.html', label: '6.1', image: 'page-6-1', insertAfter: 6 },
-            { filename: '6_2.html', label: '6.2', image: 'page-6-2', insertAfter: 6 },
-            { filename: '6_3.html', label: '6.3', image: 'page-6-3', insertAfter: 6 },
-        ],
+        customPages: [],
         // тут страницы с нестандартными переходами
-        customNavigation: {
-            '6_1.html': { next: '6.html', prev: '6.html' },
-            '6_2.html': { next: '6.html', prev: '6.html' },
-            '6_3.html': { next: '6.html', prev: '6.html' },
-
-        },
+        customNavigation: {},
         //тут страницы на которых нужно выключит навигацию стрелками клавы
-        disabledKeyboardPages: ['6.html'],
+        disabledKeyboardPages: [],
 
         //Тут лежат подсказки
         pageHints: {
             'index.html': 'Добро пожаловать! Нажмите кнопку "ЧИТАТЬ ДАЛЕЕ", чтобы начать.',
-            '6.html': 'Пройдите все двери чтобы попасть на следующую страницу.',
-
-
+            '5.html': 'Охотник бродит по лесу. Двигай картинку влево-вправо, чтобы его всё время закрывали деревья, — тогда он не заметит Бемби.',
         }
     };
 

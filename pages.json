@@ -38,46 +38,31 @@
         },
         {
           "number": 7,
-          "title": "Первая дверь",
-          "image": "/assets/img/table-of-content/page-6_1.png"
-        },
-        {
-          "number": 8,
-          "title": "Вторая дверь",
-          "image": "/assets/img/table-of-content/page-6_2.png"
-        },
-        {
-          "number": 9,
-          "title": "Третья дверь",
-          "image": "/assets/img/table-of-content/page-6_3.png"
-        },
-        {
-          "number": 10,
           "title": "Седьмая страница",
           "image": "/assets/img/table-of-content/page-7.png"
         },
         {
-          "number": 11,
+          "number": 8,
           "title": "Восьмая страница",
           "image": "/assets/img/table-of-content/page-8.png"
         },
         {
-          "number": 12,
+          "number": 9,
           "title": "Девятая страница",
           "image": "/assets/img/table-of-content/page-9.png"
         },
         {
-          "number": 13,
+          "number": 10,
           "title": "Десятая страница",
           "image": "/assets/img/table-of-content/page-10.png"
         },
         {
-          "number": 14,
+          "number": 11,
           "title": "Одиннадцатая страница",
           "image": "/assets/img/table-of-content/page-11.png"
         },
         {
-          "number": 15,
+          "number": 12,
           "title": "Двенадцатая страница",
           "image": "/assets/img/table-of-content/page-12.png"
         }

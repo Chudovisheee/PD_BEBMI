@@ -184,6 +184,9 @@ main {
 main::-webkit-scrollbar {
   display: none;
 }
+main.scene-left {
+  flex-direction: row-reverse;
+}
 
 /* ---------- 5. Текст страницы ---------- */
 #content {
@@ -266,6 +269,12 @@ main::-webkit-scrollbar {
   hyphenate-limit-lines: 2;
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
+}
+
+#overtext {
+  align-self: flex-start;
+  width: clamp(40px, 3.2vw, 72px);
+  height: auto;
 }
 
 #undertext {
@@ -366,6 +375,9 @@ main::-webkit-scrollbar {
     flex-direction: column;
     justify-content: flex-start;
     overflow-y: auto;
+  }
+  main.scene-left {
+    flex-direction: column;
   }
   #scene {
     order: -1;

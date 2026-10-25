@@ -1,0 +1,27 @@
+#overflow-wrapper {
+  background-color: #f4f4f4;
+}
+
+#background {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+#pool {
+  left: 8.05%;
+  top: 2.99%;
+  width: 70.73%;
+  height: auto;
+  aspect-ratio: 1358 / 1681;
+  overflow: visible;
+  z-index: 2;
+}
+
+#deer {
+  left: 19.88%;
+  top: 12.64%;
+  width: 54.84%;
+  z-index: 3;
+}

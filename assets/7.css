@@ -1,0 +1,106 @@
+#sky {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+#trees_second {
+  left: 2.42%;
+  top: 0%;
+  width: 95.16%;
+  z-index: 2;
+}
+
+#snow {
+  left: 3.54%;
+  top: 0%;
+  width: 92.86%;
+  z-index: 3;
+}
+
+#snow_canvas {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#trees_front {
+  left: 9.94%;
+  top: 0%;
+  width: 75.05%;
+  z-index: 4;
+}
+
+#trees_far {
+  left: 15.31%;
+  top: 0%;
+  width: 70.42%;
+  z-index: 5;
+}
+
+#cloud_1 {
+  left: 10.26%;
+  top: 10.99%;
+  width: 35.57%;
+  z-index: 6;
+}
+
+#cloud_2 {
+  left: 48.54%;
+  top: 16.15%;
+  width: 33.7%;
+  z-index: 6;
+}
+
+#cloud_3 {
+  left: 63.96%;
+  top: 39.01%;
+  width: 25.89%;
+  z-index: 6;
+}
+
+#leaf_1 {
+  left: 49.99%;
+  top: 32.4%;
+  width: 12.86%;
+  z-index: 7;
+}
+
+#leaf_2 {
+  left: 46.02%;
+  top: 13.79%;
+  width: 9.22%;
+  z-index: 7;
+}
+
+#leaf_3 {
+  left: 81.53%;
+  top: 8.25%;
+  width: 8.49%;
+  z-index: 7;
+}
+
+#leaf_4 {
+  left: 5.68%;
+  top: 26.01%;
+  width: 8.39%;
+  z-index: 7;
+}
+
+#leaf_5 {
+  left: 46.16%;
+  top: 7.68%;
+  width: 6.3%;
+  z-index: 7;
+}
+
+#leaf_6 {
+  left: 49.99%;
+  top: 66.77%;
+  width: 9.06%;
+  z-index: 7;
+}

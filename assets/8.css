@@ -1,0 +1,261 @@
+#background {
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  z-index: 1;
+}
+
+#trees_far {
+  left: 32.34%;
+  top: 0%;
+  width: 27.76%;
+  z-index: 2;
+}
+
+#trees_far_2 {
+  left: 132.34%;
+  top: 0%;
+  width: 27.76%;
+  z-index: 2;
+}
+
+#deer_1 {
+  left: 3.38%;
+  top: 43.82%;
+  width: 14.11%;
+  z-index: 3;
+}
+
+#deer_2 {
+  left: 52.19%;
+  top: 42.2%;
+  width: 14.11%;
+  z-index: 3;
+}
+
+#deer_3 {
+  left: 66.27%;
+  top: 42.2%;
+  width: 14.11%;
+  z-index: 3;
+}
+
+#deer_4 {
+  left: 85.24%;
+  top: 42.03%;
+  width: 14.11%;
+  z-index: 3;
+}
+
+#trees_middle {
+  left: 14.84%;
+  top: 0.1%;
+  width: 60.26%;
+  z-index: 4;
+}
+
+#trees_middle_2 {
+  left: 114.84%;
+  top: 0.1%;
+  width: 60.26%;
+  z-index: 4;
+}
+
+#trees_front {
+  left: 4.35%;
+  top: 0%;
+  width: 95.68%;
+  z-index: 5;
+}
+
+#trees_front_2 {
+  left: 104.35%;
+  top: 0%;
+  width: 95.68%;
+  z-index: 5;
+}
+
+#snowdrifts {
+  left: -1.67%;
+  top: 77.71%;
+  width: 99.27%;
+  z-index: 6;
+}
+
+#snowdrifts_2 {
+  left: 98.33%;
+  top: 77.71%;
+  width: 99.27%;
+  z-index: 6;
+}
+
+#hunter_shadow {
+  left: 5.31%;
+  top: 81.82%;
+  width: 83.12%;
+  z-index: 7;
+}
+
+#hunter_leg_left {
+  left: 14.82%;
+  top: 42.3%;
+  width: 15.94%;
+  z-index: 8;
+}
+
+#hunter_leg_right {
+  left: 4.35%;
+  top: 43.91%;
+  width: 19.11%;
+  z-index: 9;
+}
+
+#hunter {
+  left: 10.44%;
+  top: 7.26%;
+  width: 26.09%;
+  z-index: 10;
+}
+
+#hunter_strap {
+  left: 25.77%;
+  top: 17.65%;
+  width: 35.57%;
+  z-index: 11;
+}
+
+#hunter_arms {
+  left: 19.4%;
+  top: 8.59%;
+  width: 57.76%;
+  z-index: 12;
+}
+
+#bird_1_wing_left {
+  left: 4.35%;
+  top: 1.39%;
+  width: 6.98%;
+  z-index: 13;
+}
+
+#bird_1_body {
+  left: 6.15%;
+  top: 5.4%;
+  width: 7.66%;
+  z-index: 14;
+}
+
+#bird_1_wing_right {
+  left: 10.26%;
+  top: 8.45%;
+  width: 9.64%;
+  z-index: 15;
+}
+
+#bird_2_wing_left {
+  left: 29.7%;
+  top: -0.83%;
+  width: 7.6%;
+  z-index: 13;
+}
+
+#bird_2_body {
+  left: 32.52%;
+  top: -1.58%;
+  width: 9.27%;
+  z-index: 14;
+}
+
+#bird_2_wing_right {
+  left: 36.88%;
+  top: -4.48%;
+  width: 5.21%;
+  z-index: 15;
+}
+
+#bird_3_wing_left {
+  left: 49.97%;
+  top: -1.06%;
+  width: 7.6%;
+  z-index: 13;
+}
+
+#bird_3_body {
+  left: 52.69%;
+  top: -1.35%;
+  width: 9.43%;
+  z-index: 14;
+}
+
+#bird_3_wing_right {
+  left: 57.03%;
+  top: -3.23%;
+  width: 5.99%;
+  z-index: 15;
+}
+
+#bird_4_body {
+  left: 80.4%;
+  top: 22.16%;
+  width: 10.62%;
+  z-index: 13;
+}
+
+#bird_4_wing_left {
+  left: 74.08%;
+  top: 27.84%;
+  width: 11.46%;
+  z-index: 14;
+}
+
+#bird_4_wing_right {
+  left: 81.65%;
+  top: 18.7%;
+  width: 12.03%;
+  z-index: 15;
+}
+
+#bird_5_wing_left {
+  left: 79.34%;
+  top: 9.14%;
+  width: 9.53%;
+  z-index: 13;
+}
+
+#bird_5_body {
+  left: 85.52%;
+  top: 4.57%;
+  width: 8.85%;
+  z-index: 14;
+}
+
+#bird_5_wing_right {
+  left: 86.82%;
+  top: 0.97%;
+  width: 10%;
+  z-index: 15;
+}
+
+#trees_far,
+#trees_far_2 {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 0.8%);
+  mask-image: linear-gradient(to right, transparent 0, #000 0.8%);
+}
+
+#trees_middle,
+#trees_middle_2 {
+  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 0.8%);
+  mask-image: linear-gradient(to left, transparent 0, #000 0.8%);
+}
+
+#trees_front,
+#trees_front_2 {
+  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 0.8%);
+  mask-image: linear-gradient(to left, transparent 0, #000 0.8%);
+}
+
+#snowdrifts,
+#snowdrifts_2 {
+  -webkit-mask-image: linear-gradient(to left, transparent 0, #000 0.8%);
+  mask-image: linear-gradient(to left, transparent 0, #000 0.8%);
+}
